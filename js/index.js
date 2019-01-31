@@ -48,6 +48,7 @@ a[3].textContent = siteContent['nav']['nav-item-4'];
 a[4].textContent = siteContent['nav']['nav-item-5'];
 a[5].textContent = siteContent['nav']['nav-item-6'];
 
+
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
@@ -96,3 +97,23 @@ p[7].textContent = siteContent['contact']['email'];
 
 //copyright
 p[8].textContent = siteContent['footer']['copyright'];
+
+//nav
+let extraNav1 = document.createElement('A');
+extraNav1.textContent = 'Games';
+document.querySelector('nav').appendChild(extraNav1);
+
+let extraNav2 = document.createElement('A');
+extraNav2.textContent = 'Social';
+document.querySelector('nav').appendChild(extraNav2);
+
+a[0].style.color = 'green';
+a[1].style.color = 'green';
+a[2].style.color = 'green';
+a[3].style.color = 'green';
+a[4].style.color = 'green';
+a[5].style.color = 'green';
+extraNav1.style.color = 'green';
+extraNav2.style.color = 'green';
+
+console.log(a);
